@@ -1,19 +1,21 @@
-import { useState } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 import { faBookmark, faComment, faHeart, faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 import '../styles/Feed.css'
-export default function Feed() {
+export default function Feed(props) {
+    const likes = Math.floor(Math.random() * 100)
     return (
-        <div className="feed">
+        <div>
+        <div className="box">
         <div className="card">
             <div className="card-body">
             <div className="card-title">
-                <img src="https://snowbit.vercel.app/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F65452005%3Fv%3D4&w=384&q=75" alt="profile" className="rounded-circle avatar"/>
-                <h3 className="username">snowbit</h3>
+                <img src={props.avatar} alt="profile" className="rounded-circle avatar"/>
+                <h3 className="username">{props.name}</h3>
             </div>
             <div className="card-text">
-                <img src="post.jpg" className="img-fluid post" alt="post"/>
+                <img src={props.postImg} className="img-fluid post" alt="post"/>
                 <div className="post-info">
                     <div className="icons">
                     <div className="icons-left">
@@ -26,15 +28,16 @@ export default function Feed() {
                     </div>
                     </div>
                     <p className="likes">
-                        18 likes
+                        {likes} likes
                     </p>
                     <p className="post-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    {props.description}
                     </p>
                 </div>
             </div>
             </div>
             
+        </div>
         </div>
         </div>
     )
