@@ -25,9 +25,11 @@ export default function Feed() {
                         <FontAwesomeIcon icon={faBookmark} className="post-icon"/>
                     </div>
                     </div>
+                    <p className="likes">
+                        18 likes
+                    </p>
                     <p className="post-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
             </div>

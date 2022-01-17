@@ -23,12 +23,6 @@
 .navigation-right button:hover{
     background-color: #0082d4;
 }
-.navigation-center h3{
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-    color: #0095f6;
-}
 @media only screen and (max-width: 600px) {
     .navigation-center{
         display: none;
