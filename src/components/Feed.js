@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 import { faBookmark, faComment, faHeart, faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 import '../styles/Feed.css'
-
 export default function Feed() {
     return (
         <div className="feed">
