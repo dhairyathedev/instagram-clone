@@ -4,7 +4,7 @@ const data = [
         id: 1,
         name: "john",
         avatar: `https://avatars.dicebear.com/api/${sprite}/john.svg`,
-        postImg: "https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80",
+        postImg: "post.jpg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     },
     {
